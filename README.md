@@ -27,6 +27,8 @@
 
 ## 📊 My GitHub Stats
 
+[![David's GitHub stats](https://github-readme-stats.vercel.app/api?username=david-lee0128)](https://github.com/david-lee0128/github-readme-stats)
+
 <div align="center" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
   <!-- Main GitHub Stats Card Using Fast Mirror -->
   <img src="https://vercel.app" alt="David's GitHub Stats" height="195" />
