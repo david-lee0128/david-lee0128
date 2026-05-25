@@ -28,6 +28,14 @@
 ## 📊 My GitHub Stats
 
 <div align="center" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+  <!-- Main GitHub Stats Card Using Fast Mirror -->
+  <img src="https://vercel.app" alt="David's GitHub Stats" height="195" />
+  
+  <!-- Top Languages Card Using Fast Mirror -->
+  <img src="https://vercel.app" alt="David's Top Languages" height="195" />
+</div>
+
+<div align="center" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
   <img src="https://github-readme-stats.vercel.app/api?username=david-lee0128&show_icons=true&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&icon_color=fff" alt="David's GitHub Stats" height="195" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=david-lee0128&hide=svelte,typescript,scss&layout=compact&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&icon_color=fff" alt="David's Top Languages" height="195" />
 </div>
