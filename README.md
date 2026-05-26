@@ -116,8 +116,7 @@
 
 <br/>
 <div display="flex">
-  <img width="420px" height="180px" src="https://github-readme-streak-stats.herokuapp.com/?user=Vi6388&theme=onedark" />
-  <img align="right" alt="GIF" src="https://github.com/galileo0106/galileo0106/blob/main/code.gif?raw=true" width="355" height="180" />
+  <img width="420px" height="180px" src="https://github-readme-streak-stats.herokuapp.com/?user=david-lee0128&theme=onedark" />
 </div>
 
 <!--
