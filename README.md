@@ -26,7 +26,7 @@
 * I spend days perfecting hyper-realistic environments and dynamic AI systems, just for testers to click "Next" and ask if the button can be a slightly different shade of blue.
 
 ## :hammer_and_wrench: My Main Skills are ...  
-  <div style="display: flex; align-items: flex-start; align: center">
+<div style="display: flex; align-items: flex-start; align: center">
 <table align="center">
   <tr>
     <td align="center"  width="96">
