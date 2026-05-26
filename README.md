@@ -26,89 +26,112 @@
 * I spend days perfecting hyper-realistic environments and dynamic AI systems, just for testers to click "Next" and ask if the button can be a slightly different shade of blue.
 
 ## :hammer_and_wrench: My Main Skills are ...  
-  <div style="display: flex; align-items: flex-start; align: center">
+<div style="display: flex; align-items: flex-start; align: center">
 <table align="center">
   <tr>
     <td align="center"  width="96">
-        <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
+      <img src="https://skillicons.dev/icons?i=unreal" width="48" height="48" alt="unreal engine" />
+      <br>Unreal Engine
+    </td>
+    <td align="center"  width="96">
+      <img src="https://skillicons.dev/icons?i=unity" width="48" height="48" alt="unity" />
+      <br>Unity
+    </td>     
+    <td align="center"  width="96">
+      <img src="https://skillicons.dev/icons?i=blender" width="48" height="48" alt="blender" />
+      <br>Blender
+    </td>    
+    <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=ps" alt="photoshop" width="48" height="48" />
+      <br>Photoshop
+    </td>
+    <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=gcp" width="48" height="48" alt="gcp" />
+      <br>GCP
+    </td>
+    <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=postman" width="48" height="48" alt="postman" />
+      <br>Postman
+    </td>
+  </tr>
+  <tr>
+    <td align="center"  width="96">
+      <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
       <br>HTML5
     </td>    
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="65" height="65" />
+      <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="js" width="65" height="65" />
       <br>JavaScript
     </td>
     <td align="center" width="96">
-      <a href="#macropower-tech">
-        <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="icon" width="65" height="65" />
-      </a>
+      <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="python" width="65" height="65" />
       <br>Python
     </td>
     <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=php" width="48" height="48" alt="PHP" />
+      <img src="https://skillicons.dev/icons?i=php" width="48" height="48" alt="PHP" />
       <br>PHP
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/django-icon.svg" alt="icon" width="65" height="65" />
+      <img src="https://techstack-generator.vercel.app/django-icon.svg" alt="django" width="65" height="65" />
       <br>Django
     </td>
     <td align="center"  width="96">
-        <img src="https://skillicons.dev/icons?i=laravel" width="48" height="48" alt="Laravel" />
+      <img src="https://skillicons.dev/icons?i=laravel" width="48" height="48" alt="Laravel" />
       <br>Laravel
     </td>
   </tr>
   <tr>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" />
+      <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="mysql" width="65" height="65" />
       <br>MySQL
     </td>
     <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" />
+      <img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" />
       <br>MongoDB
     </td>
     <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" />
+      <img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" />
       <br>PostgreSQL
     </td>
     <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="css" />
+      <img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="css" />
       <br>CSS
     </td>
     <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="tailwind" />
+      <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="tailwind" />
       <br>Tailwind
     </td>
     <td align="center"  width="96">
-        <img src="https://skillicons.dev/icons?i=bootstrap" width="48" height="48" alt="bootstrap" />
+      <img src="https://skillicons.dev/icons?i=bootstrap" width="48" height="48" alt="bootstrap" />
       <br>Bootstrap
     </td>
   </tr>
   <tr>
     <td align="center" width="96">
-        <img src="https://polaris.shopify.com/images/shopify-logo.svg" alt="shopify" width="65" height="65" />
-      <br>Shopify
+      <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="restapi" width="65" height="65" />
+      <br>Rest API
     </td> 
     <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=webflow" width="48" height="48" alt="webflow" />
-      <br>Webflow
+      <img src="https://techstack-generator.vercel.app/aws-icon.svg" width="65" height="65" alt="aws" />
+      <br>AWS
     </td>
     <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=wordpress" width="48" height="48" alt="wordpress" />
-      <br>WordPress
+      <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" height="65" alt="github" />
+      <br>Github
     </td>
     <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=ruby" width="48" height="48" alt="ruby" />
-      <br>Ruby
+        <img src="https://techstack-generator.vercel.app/cpp-icon.svg" width="65" height="65" alt="cpp" />
+      <br>C++
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="65" height="65" />
-      <br>React
+      <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="C#" width="65" height="65" />
+      <br>C#
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="65" height="65" />
-      <br>TypeScript
-    </td>
-    
- </tr>
+      <img src="https://techstack-generator.vercel.app/sass-icon.svg" alt="sass" width="65" height="65" />
+      <br>SASS
+    </td> 
+  </tr>
 </table>
 <br><br>
 
