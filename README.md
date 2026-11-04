@@ -26,67 +26,18 @@ I build worlds you can see. I come from **Unreal Engine** and real-time 3D, wher
 I'm a developer at **[Story Loom AI](https://storyloomai.com)**, an AI-driven storytelling platform. My part is the visual one: making a story something you can see.
 
 <p align="center">
-  <a href="https://storyloomai.com"><img src="https://img.shields.io/badge/Main%20app-storyloomai.com-ff7a59?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Main app: storyloomai.com" /></a>
+  <a href="https://storyloomai.com"><img src="assets/main-app.svg" width="100%" alt="The main app: Story Loom AI, where the story is written. storyloomai.com" /></a>
 </p>
 
-The story is written in the main app. These modules are where it is seen:
-
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h3>🎬 <a href="https://previs.storyloomai.art">Previs</a></h3>
-      Pre-visualization: scenes lit, framed and rendered like a film set before anything is final, using real-time techniques from game engines.
-      <br /><br />
-      <a href="https://previs.storyloomai.art"><img src="https://img.shields.io/badge/previs.storyloomai.art-open-8f7bff?style=flat-square&logo=googlechrome&logoColor=white" alt="previs.storyloomai.art" /></a>
-    </td>
-    <td width="33%" valign="top">
-      <h3>🌍 <a href="https://design.storyloomai.art">Scene Studio</a></h3>
-      Image to 3D world: a single photo is read for depth, shape and light, then rebuilt as a 3D world you can move through and share.
-      <br /><br />
-      <a href="https://design.storyloomai.art"><img src="https://img.shields.io/badge/design.storyloomai.art-open-ff7a59?style=flat-square&logo=googlechrome&logoColor=white" alt="design.storyloomai.art" /></a>
-    </td>
-    <td width="33%" valign="top">
-      <h3>🎨 <a href="https://comic.storyloomai.art">SLA Comic</a></h3>
-      Story art: type a title, meet your characters, pick a story, and it is written and drawn as a webtoon or a printed comic book.
-      <br /><br />
-      <a href="https://comic.storyloomai.art"><img src="https://img.shields.io/badge/comic.storyloomai.art-open-ffb36b?style=flat-square&logo=googlechrome&logoColor=white" alt="comic.storyloomai.art" /></a>
-    </td>
-  </tr>
-</table>
+<p><a href="https://previs.storyloomai.art"><img width="33.33%" src="assets/card-previs.svg" alt="Previs, previs.storyloomai.art: pre-visualization, scenes lit, framed and rendered like a film set before anything is final, using real-time techniques from game engines." /></a><a href="https://design.storyloomai.art"><img width="33.33%" src="assets/card-design.svg" alt="Scene Studio, design.storyloomai.art: a single photo is read for depth, shape and light, then rebuilt as a 3D world you can move through and share." /></a><a href="https://comic.storyloomai.art"><img width="33.33%" src="assets/card-comic.svg" alt="SLA Comic, comic.storyloomai.art: type a title, meet your characters, pick a story, and it is written and drawn as a webtoon or a printed comic book." /></a></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Unreal%20Engine-real--time%203D-8f7bff?style=flat-square&logo=unrealengine&logoColor=white" alt="Unreal Engine" />
-  &nbsp;➜&nbsp;
-  <img src="https://img.shields.io/badge/Visualization-image%20to%203D%20worlds-ff7a59?style=flat-square" alt="Visualization and image to 3D worlds" />
-  &nbsp;➜&nbsp;
-  <img src="https://img.shields.io/badge/AI%20Art-now-ffb36b?style=flat-square" alt="AI art" />
+  <img src="assets/path.svg" width="100%" alt="Unreal Engine (real-time 3D), then visualization (image to 3D worlds), and now AI art" />
 </p>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-
-### 🔭 I’m Currently Working On ...
-
-* Building **Story Loom AI**, an AI-driven storytelling platform: its art, its rendering and its 3D worlds.
-* Turning single images into 3D worlds you can explore.
-* Real-time visualization of story scenes, on the web with three.js and in Unreal Engine 5.
-* Crafting procedural, hyper-realistic environments that react to stories dynamically.
-* Merging advanced game AI with cinematic, player-driven storytelling.
-
-</td>
-    <td width="50%" valign="top">
-
-### 🌱 I’m Currently Learning ...
-
-* Generative AI for art: keeping characters and style consistent from one scene to the next.
-* Reading depth and shape from a single image and rebuilding it in 3D.
-* Integrating real-time AI generation pipelines directly into Unreal Engine 5.
-* Coaxing Nanite and Lumen into rendering trillion-polygon worlds.
-
-</td>
-  </tr>
-</table>
+<p align="center">
+  <img src="assets/now.svg" width="100%" alt="Currently working on: building Story Loom AI, an AI-driven storytelling platform (its art, its rendering and its 3D worlds); turning single images into 3D worlds you can explore; real-time visualization of story scenes, on the web with three.js and in Unreal Engine 5; crafting procedural, hyper-realistic environments that react to stories dynamically; merging advanced game AI with cinematic, player-driven storytelling. Currently learning: generative AI for art, keeping characters and style consistent from one scene to the next; reading depth and shape from a single image and rebuilding it in 3D; integrating real-time AI generation pipelines directly into Unreal Engine 5; coaxing Nanite and Lumen into rendering trillion-polygon worlds." />
+</p>
 
 ## ⚡ Fun Facts Are ...
 
@@ -243,11 +194,9 @@ The story is written in the main app. These modules are where it is seen:
 
 <br/>
 <div style="display: flex; align-items: flex-start; align: center">
-  <img align="left" width="49.5%" src="https://github-readme-streak-stats.herokuapp.com/?user=david-lee0128&theme=onedark" />
-  <img align="right" width="49.5%" src="assets/activity.svg" alt="Contributions in the last 16 weeks" />
+  <img width="49.99%" src="https://github-readme-streak-stats.herokuapp.com/?user=david-lee0128&theme=onedark" /><img width="49.99%" src="assets/activity.svg" alt="Contributions in the last 16 weeks" />
 </div>
 
-<br clear="all" />
 <br/><br/>
 
 <p align="center">

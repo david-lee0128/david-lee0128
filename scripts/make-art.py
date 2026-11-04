@@ -1,9 +1,16 @@
-"""Write the animated SVG header and footer for David's GitHub profile: space behind the words
-(a drifting dot grid, twinkling stars, a shooting star) and planets that turn, some with a ring
-or a moon. The header has one large planet with faint orbits around it; the footer a few small ones.
+"""Write the animated SVG art for David's GitHub profile, all in one look: space (a drifting dot
+grid, twinkling stars) and planets that turn, with Sora and Inter for the words.
 
-Run: python scripts/make-banners.py   (writes assets/header.svg and assets/footer.svg; needs the
-internet, for the fonts)
+- assets/header.svg, assets/footer.svg: the banners at the top and bottom. The header has one large
+  planet with faint orbits around it; the footer a few small ones.
+- assets/main-app.svg: the strip that links to the main app, storyloomai.com.
+- assets/card-previs.svg, card-design.svg, card-comic.svg: the three module cards, side by side.
+- assets/path.svg: Unreal Engine -> Visualization -> AI Art.
+- assets/now.svg: what he is working on and learning.
+
+GitHub will not let a README set its own fonts or backgrounds, which is why these are images.
+
+Run: python scripts/make-art.py   (needs the internet, for the fonts)
 """
 import base64
 import html
@@ -233,25 +240,179 @@ header = banner(
 
 # the footer: a shorter strip, the words on the right, a few small planets scattered on the left
 footer = banner(
-    960, 190,
+    960, 140,
     [
-        (208, 104, 30, "violet", {"moon": True, "spin": 16}),
-        (82, 62, 19, "coral", {"ring": True, "tilt": -22, "spin": 13}),
-        (334, 52, 11, "gold", {"spin": 10}),
-        (360, 140, 16, "plum", {"ring": True, "tilt": 18, "spin": 14}),
-        (112, 150, 8, "ice", {"spin": 9}),
-        (548, 34, 5, "gold", {"spin": 8}),
+        (206, 72, 25, "violet", {"moon": True, "spin": 16}),
+        (84, 46, 15, "coral", {"ring": True, "tilt": -22, "spin": 13}),
+        (330, 38, 9, "gold", {"spin": 10}),
+        (370, 100, 13, "plum", {"ring": True, "tilt": 18, "spin": 14}),
+        (118, 110, 7, "ice", {"spin": 9}),
+        (540, 26, 4, "gold", {"spin": 8}),
     ],
     None, (0.22, 0.5),
-    [(42, 120, 5, 3.6), (270, 168, 4, 4.2), (470, 24, 5, 3.1), (930, 166, 5, 4.4), (640, 172, 4, 3.7)],
-    ((300, 16), (560, 50)),
-    '''    <text x="904" y="62" fill="#ffb36b" font-family="Inter" font-size="12" font-weight="600" letter-spacing="3.2" text-anchor="end">THANKS FOR STOPPING BY</text>
-    <text x="904" y="110" fill="#f4eee6" font-family="Sora" font-size="36" font-weight="700" letter-spacing="-1.3" text-anchor="end">See you in <tspan fill="url(#word)">another world.</tspan></text>
-    <text x="904" y="146" fill="#a59eb3" font-family="Inter" font-size="14" font-weight="400" letter-spacing="0.1" text-anchor="end">storyloomai.com · Previs · Scene Studio · SLA Comic</text>''',
+    [(40, 96, 5, 3.6), (274, 122, 4, 4.2), (468, 20, 4, 3.1), (932, 120, 5, 4.4), (620, 126, 4, 3.7)],
+    ((300, 14), (540, 40)),
+    '''    <text x="904" y="44" fill="#ffb36b" font-family="Inter" font-size="12" font-weight="600" letter-spacing="3.2" text-anchor="end">THANKS FOR STOPPING BY</text>
+    <text x="904" y="86" fill="#f4eee6" font-family="Sora" font-size="34" font-weight="700" letter-spacing="-1.2" text-anchor="end">See you in <tspan fill="url(#word)">another world.</tspan></text>
+    <text x="904" y="114" fill="#a59eb3" font-family="Inter" font-size="14" font-weight="400" letter-spacing="0.1" text-anchor="end">storyloomai.com · Previs · Scene Studio · SLA Comic</text>''',
     "Thanks for stopping by. See you in another world. Story Loom AI: Previs, Scene Studio, SLA Comic",
     11,
 )
 
-for name, svg in [("assets/header.svg", header), ("assets/footer.svg", footer)]:
+# ---- the panels inside the README: same space, quieter -------------------------------------------
+
+def panel(W, H, body, words, label, x0=0, x1=None, glow=("#8f7bff", 0.0, 0.0), planets=(), stars=24, seed=1, rx=18):
+    """A dark card from x0 to x1 (the rest is clear, the gap to its neighbour), a dot grid, a glow
+    in one corner, a few stars, optional small planets, and the words."""
+    x1 = W if x1 is None else x1
+    rnd = random.Random(seed)
+    words = words.replace('font-family="Sora"', f'font-family="Sora, {STACK}"').replace('font-family="Inter"', f'font-family="Inter, {STACK}"')
+    gc, gx, gy = glow
+    st = []
+    for _ in range(stars):
+        x, y = rnd.uniform(x0 + 10, x1 - 10), rnd.uniform(10, H - 10)
+        dur, begin, lo = rnd.uniform(2.4, 5.5), rnd.uniform(0, 4), rnd.uniform(0.1, 0.35)
+        st.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rnd.choice([0.6, 0.8, 1.0, 1.2])}" fill="#fff">'
+                  f'<animate attributeName="opacity" values="{lo:.2f};0.9;{lo:.2f}" dur="{dur:.1f}s" begin="{begin:.1f}s" repeatCount="indefinite"/></circle>')
+    pd, pb = zip(*(planet(i, *p[:4], **(p[4] if len(p) > 4 else {})) for i, p in enumerate(planets))) if planets else ((), ())
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{html.escape(label)}">
+  <style>
+    {fonts_css(words)}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#120f1b"/><stop offset="1" stop-color="#191226"/></linearGradient>
+    <radialGradient id="corner" gradientUnits="userSpaceOnUse" cx="{x0 + (x1 - x0) * gx:.0f}" cy="{H * gy:.0f}" r="{max(x1 - x0, H) * 0.75:.0f}">
+      <stop offset="0" stop-color="{gc}" stop-opacity="0.30"/><stop offset="1" stop-color="{gc}" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="9" cy="9" r="0.8" fill="#d9d2ff" fill-opacity="0.18"/>
+      <animateTransform attributeName="patternTransform" type="translate" values="0 0;18 18" dur="30s" repeatCount="indefinite"/>
+    </pattern>
+    <radialGradient id="shade" cx="0.32" cy="0.3" r="0.85">
+      <stop offset="0.45" stop-color="#0d0b12" stop-opacity="0"/><stop offset="1" stop-color="#0d0b12" stop-opacity="0.78"/>
+    </radialGradient>
+    <linearGradient id="word" x1="0" x2="1"><stop offset="0" stop-color="#8f7bff"/><stop offset="0.5" stop-color="#ff7a59"/><stop offset="1" stop-color="#ffb36b"/></linearGradient>
+    {"".join(pd)}
+    <clipPath id="card"><rect x="{x0}" width="{x1 - x0}" height="{H}" rx="{rx}"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect x="{x0}" width="{x1 - x0}" height="{H}" fill="url(#bg)"/>
+    <rect x="{x0}" width="{x1 - x0}" height="{H}" fill="url(#corner)"/>
+    <rect x="{x0}" width="{x1 - x0}" height="{H}" fill="url(#dots)"/>
+    {"".join(st)}
+    {body}
+    {"".join(pb)}
+{words}
+  </g>
+  <rect x="{x0 + 0.5}" y="0.5" width="{x1 - x0 - 1}" height="{H - 1}" rx="{rx}" fill="none" stroke="#ffffff" stroke-opacity="0.09"/>
+</svg>
+'''
+
+
+ARROW = '<path d="M0 8 L8 0 M2 0 H8 V6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>'
+
+
+def pill(x, y, text, color, size=12.5, anchor_right=False):
+    """A rounded outline around a domain, with an arrow; width from a rough Inter measure."""
+    w = len(text) * size * 0.56 + 40
+    left = x - w if anchor_right else x
+    return (f'<rect x="{left:.1f}" y="{y - 15}" width="{w:.1f}" height="26" rx="13" fill="{color}" fill-opacity="0.10" stroke="{color}" stroke-opacity="0.45"/>'
+            f'<text x="{left + 14:.1f}" y="{y + 2.5}" fill="{color}" font-family="Inter" font-size="{size}" font-weight="500">{text}</text>'
+            f'<g transform="translate({left + w - 22:.1f} {y - 6})" color="{color}" style="color:{color}">{ARROW}</g>')
+
+
+def lines(x, y, rows, size, color, lead, weight=400):
+    return "\n".join(f'    <text x="{x}" y="{y + i * lead:.1f}" fill="{color}" font-family="Inter" font-size="{size}" font-weight="{weight}">{html.escape(r)}</text>' for i, r in enumerate(rows))
+
+
+# the main app: a slim strip across the page
+main_app = panel(
+    960, 96, "",
+    f'''    <text x="104" y="40" fill="#ffb36b" font-family="Inter" font-size="12" font-weight="600" letter-spacing="3">THE MAIN APP</text>
+    <text x="104" y="68" fill="#f4eee6" font-family="Sora" font-size="25" font-weight="700" letter-spacing="-0.6">Story Loom AI, <tspan fill="url(#word)">where the story is written</tspan></text>
+    {pill(928, 50, "storyloomai.com", "#ff7a59", 14, anchor_right=True)}''',
+    "The main app: Story Loom AI, where the story is written. storyloomai.com",
+    glow=("#ff7a59", 0.05, 0.5), planets=[(56, 48, 22, "coral", {"ring": True, "tilt": -18, "spin": 14})], stars=30, seed=3, rx=16,
+)
+
+# the three modules, each its own image so each can be its own link. Each is 300 wide with the
+# card set inside it so that, laid edge to edge, the outer edges meet the page and the gaps are equal.
+CW, CH = 300, 282
+cards = {}
+for n, (key, pal, color, eyebrow, title, dom, desc) in enumerate([
+    ("previs", "violet", "#a08bff", "RENDERING", "Previs", "previs.storyloomai.art",
+     ["Pre-visualization: scenes lit, framed", "and rendered like a film set before", "anything is final, using real-time", "techniques from game engines."]),
+    ("design", "coral", "#ff8a6b", "IMAGE TO 3D WORLD", "Scene Studio", "design.storyloomai.art",
+     ["A single photo is read for depth,", "shape and light, then rebuilt as a", "3D world you can move through", "and share."]),
+    ("comic", "gold", "#ffb36b", "STORY ART", "SLA Comic", "comic.storyloomai.art",
+     ["Type a title, meet your characters,", "pick a story, and it is written and", "drawn as a webtoon or a printed", "comic book."]),
+]):
+    x0, x1 = 4 * n, CW - 8 + 4 * n
+    cards[key] = panel(
+        CW, CH, "",
+        f'''    <text x="{x0 + 24}" y="104" fill="{color}" font-family="Inter" font-size="11" font-weight="600" letter-spacing="2.6">{eyebrow}</text>
+    <text x="{x0 + 23}" y="134" fill="#f4eee6" font-family="Sora" font-size="25" font-weight="700" letter-spacing="-0.7">{title}</text>
+{lines(x0 + 24, 162, desc, 13, "#a59eb3", 19.5)}
+    {pill(x0 + 24, 254, dom, color, 12)}''',
+        f"{title}: {' '.join(desc)} {dom}",
+        x0=x0, x1=x1, glow=(color, 0.15, 0.1), planets=[(x0 + 50, 50, 22, pal, {"ring": key == "comic", "moon": key == "previs", "spin": 12 + 2 * n})],
+        stars=8, seed=20 + n,
+    )
+
+# Unreal Engine -> Visualization -> AI Art, with a light running along the path
+steps = [("UNREAL ENGINE", "Real-time 3D", "#a08bff"), ("VISUALIZATION", "Image to 3D worlds", "#ff8a6b"), ("AI ART", "Now", "#ffb36b")]
+path_body, path_words = [], []
+xs = [150, 480, 810]
+# a flat line has no height, so its gradient is set in page units, not the line's own box
+path_body.append(f'<linearGradient id="pathline" gradientUnits="userSpaceOnUse" x1="{xs[0]}" x2="{xs[-1]}" y1="0" y2="0"><stop offset="0" stop-color="#a08bff"/><stop offset="0.5" stop-color="#ff8a6b"/><stop offset="1" stop-color="#ffb36b"/></linearGradient>')
+path_body.append(f'<line x1="{xs[0]}" y1="40" x2="{xs[-1]}" y2="40" stroke="url(#pathline)" stroke-width="2" stroke-dasharray="3 7" opacity="0.8">'
+                 f'<animate attributeName="stroke-dashoffset" values="0;-100" dur="5s" repeatCount="indefinite"/></line>')
+path_body.append(f'<circle r="4" cy="40" fill="#fff"><animate attributeName="cx" values="{xs[0]};{xs[-1]}" dur="3.6s" repeatCount="indefinite"/>'
+                 f'<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.6s" repeatCount="indefinite"/></circle>')
+for x, (a, b, c) in zip(xs, steps):
+    path_body.append(f'<circle cx="{x}" cy="40" r="15" fill="#120f1b" stroke="{c}" stroke-width="2"/>'
+                     f'<circle cx="{x}" cy="40" r="6" fill="{c}"><animate attributeName="r" values="4.5;7;4.5" dur="2.6s" repeatCount="indefinite"/></circle>')
+    path_words.append(f'    <text x="{x}" y="82" fill="{c}" font-family="Inter" font-size="12" font-weight="600" letter-spacing="2.6" text-anchor="middle">{a}</text>')
+    path_words.append(f'    <text x="{x}" y="104" fill="#f4eee6" font-family="Sora" font-size="17" font-weight="600" letter-spacing="-0.3" text-anchor="middle">{b}</text>')
+path = panel(960, 126, "".join(path_body), "\n".join(path_words), "Unreal Engine, real-time 3D, then visualization and image to 3D worlds, and now AI art",
+             glow=("#8f7bff", 0.5, 0.0), stars=36, seed=5, rx=16)
+
+# working on / learning, two halves of one panel
+work = [
+    ["Building Story Loom AI, an AI-driven storytelling", "platform: its art, its rendering and its 3D worlds."],
+    ["Turning single images into 3D worlds you can explore."],
+    ["Real-time visualization of story scenes, on the web", "with three.js and in Unreal Engine 5."],
+    ["Crafting procedural, hyper-realistic environments", "that react to stories dynamically."],
+    ["Merging advanced game AI with cinematic,", "player-driven storytelling."],
+]
+learn = [
+    ["Generative AI for art: keeping characters and style", "consistent from one scene to the next."],
+    ["Reading depth and shape from a single image and", "rebuilding it in 3D."],
+    ["Integrating real-time AI generation pipelines", "directly into Unreal Engine 5."],
+    ["Coaxing Nanite and Lumen into rendering", "trillion-polygon worlds."],
+]
+
+
+def column(x, eyebrow, title, items, color):
+    out = [f'    <text x="{x}" y="50" fill="{color}" font-family="Inter" font-size="12" font-weight="600" letter-spacing="2.8">{eyebrow}</text>',
+           f'    <text x="{x}" y="80" fill="#f4eee6" font-family="Sora" font-size="22" font-weight="700" letter-spacing="-0.5">{title}</text>']
+    dots, y = [], 118
+    for item in items:
+        dots.append(f'<circle cx="{x + 4}" cy="{y - 5}" r="3.2" fill="{color}"/>')
+        out.append(lines(x + 20, y, item, 14.5, "#c9c2d6", 21))
+        y += 21 * len(item) + 14
+    return out, dots, y
+
+
+wl, wd, wy = column(48, "CURRENTLY WORKING ON", "What I am building", work, "#ff8a6b")
+ll, ld, ly = column(528, "CURRENTLY LEARNING", "What I am learning", learn, "#a08bff")
+NH = max(wy, ly) + 16
+now = panel(960, NH, '<line x1="480" y1="36" x2="480" y2="' + str(NH - 36) + '" stroke="#ffffff" stroke-opacity="0.08"/>' + "".join(wd + ld),
+            "\n".join(wl + ll), "What I am working on and learning: " + " ".join(" ".join(i) for i in work + learn),
+            glow=("#ff7a59", 0.0, 0.0), stars=40, seed=9, rx=18)
+
+for name, svg in [("assets/header.svg", header), ("assets/footer.svg", footer), ("assets/main-app.svg", main_app),
+                  ("assets/card-previs.svg", cards["previs"]), ("assets/card-design.svg", cards["design"]), ("assets/card-comic.svg", cards["comic"]),
+                  ("assets/path.svg", path), ("assets/now.svg", now)]:
     open(name, "w", encoding="utf-8", newline="\n").write(svg)
     print("wrote", name, len(svg) // 1024, "KB")

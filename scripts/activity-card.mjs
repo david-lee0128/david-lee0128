@@ -40,7 +40,8 @@ const day = (iso) => new Date(iso + "T00:00:00Z").toLocaleDateString("en-US", { 
 const gold = "#e4bf7a", green = "#98c379", rose = "#e06c75", bg = "#282c34", grid = "#3a3f4b";
 // the streak card is drawn 495x195; this card has the same shape (165 tall, so 165 * 495 / 195 wide), so
 // at the same width in the README both are the same height
-const H = 165, W = +(H * 495 / 195).toFixed(2), Y0 = 7.5, CH = 165, X0 = 24, X1 = W - 24, BASE = 140, TOP = 80;
+// G is a clear strip on the left: the gap between the two cards, which sit edge to edge in the README
+const H = 165, W = +(H * 495 / 195).toFixed(2), G = 9, Y0 = 7.5, CH = 165, X0 = G + 24, X1 = W - 24, BASE = 140, TOP = 80;
 // square-root heights, so quiet weeks still show next to a busy one (each bar keeps its exact count in a <title>)
 const step = (X1 - X0) / WEEKS, bw = 14;
 
@@ -73,7 +74,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 ${Y0} ${W} ${H}"
     <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
     <clipPath id="bars">${clip}</clipPath>
   </defs>
-  <rect y="${Y0}" width="${W}" height="${CH}" rx="4.5" fill="${bg}"/>
+  <rect x="${G}" y="${Y0}" width="${W - G}" height="${CH}" rx="4.5" fill="${bg}"/>
 
   <g class="t">
     <text class="fade" x="${X0}" y="44" fill="${gold}" font-size="28" font-weight="700">${total.toLocaleString("en-US")}</text>
