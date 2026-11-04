@@ -223,6 +223,10 @@ I'm the main developer of **[Story Loom AI Art](https://storyloomai.art)**, the 
       <img src="https://cdn.simpleicons.org/nvidia/76B900" width="48" height="48" alt="NVIDIA CUDA" />
       <br>
     </td>
+    <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" />
+      <br>
+    </td>
   </tr>
 </table>
 <br><br>
