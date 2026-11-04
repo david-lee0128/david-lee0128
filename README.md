@@ -3,13 +3,13 @@
 </p>
 
 <p align="center">
-  <a href="https://storyloomai.art">
-    <img src="https://readme-typing-svg.demolab.com?font=Sora&weight=600&size=22&duration=2800&pause=900&color=FFB36B&center=true&vCenter=true&width=720&lines=Main+developer+of+Story+Loom+AI+Art;Turning+a+single+image+into+a+3D+world;Rendering+stories+as+worlds;Unreal+Engine+%E2%9E%9C+Visualization+%E2%9E%9C+AI+Art" alt="Main developer of Story Loom AI Art" />
+  <a href="https://storyloomai.com">
+    <img src="https://readme-typing-svg.demolab.com?font=Sora&weight=600&size=22&duration=2800&pause=900&color=FFB36B&center=true&vCenter=true&width=720&lines=Developer+at+Story+Loom+AI;Turning+a+single+image+into+a+3D+world;Rendering+stories+as+worlds;Unreal+Engine+%E2%9E%9C+Visualization+%E2%9E%9C+AI+Art" alt="Developer at Story Loom AI" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://storyloomai.art"><img src="https://img.shields.io/badge/storyloomai.art-live-ff7a59?style=for-the-badge&logo=googlechrome&logoColor=white" alt="storyloomai.art" /></a>
+  <a href="https://storyloomai.com"><img src="https://img.shields.io/badge/storyloomai.com-developer-ff7a59?style=for-the-badge&logo=googlechrome&logoColor=white" alt="storyloomai.com" /></a>
   <img src="https://img.shields.io/badge/Unreal%20Engine%205-0d0b12?style=for-the-badge&logo=unrealengine&logoColor=white" alt="Unreal Engine 5" />
   <img src="https://img.shields.io/badge/three.js-8f7bff?style=for-the-badge&logo=threedotjs&logoColor=white" alt="three.js" />
   <img src="https://img.shields.io/badge/AI%20Art-ffb36b?style=for-the-badge" alt="AI Art" />
@@ -21,13 +21,13 @@
 
 I build worlds you can see. I come from **Unreal Engine** and real-time 3D, where light, cameras and whole worlds have to render in a fraction of a second. Today I work on **visualization** and on turning **single images into 3D worlds**, and I am moving into the **AI art** field.
 
-## 🪐 Story Loom AI Art
+## 🪐 Story Loom AI
 
 <p align="center">
-  <a href="https://storyloomai.art"><img src="assets/story-loom-ai-art.svg" width="100%" alt="Story Loom AI Art: stories, rendered as worlds" /></a>
+  <a href="https://storyloomai.com"><img src="assets/story-loom-ai.svg" width="100%" alt="Story Loom AI: stories, rendered as worlds" /></a>
 </p>
 
-I'm the main developer of **[Story Loom AI Art](https://storyloomai.art)**, the visual side of Story Loom AI. Story Loom AI is where a story gets written; Story Loom AI Art is where it gets seen.
+I'm a developer at **[Story Loom AI](https://storyloomai.com)**, an AI-driven storytelling platform. My part is the visual one: making a story something you can see.
 
 <table>
   <tr>
@@ -60,7 +60,7 @@ I'm the main developer of **[Story Loom AI Art](https://storyloomai.art)**, the 
 
 ### 🔭 I’m Currently Working On ...
 
-* Building **Story Loom AI Art**: the art, rendering and 3D-world side of an AI-driven storytelling platform.
+* Building **Story Loom AI**, an AI-driven storytelling platform: its art, its rendering and its 3D worlds.
 * Turning single images into 3D worlds you can explore.
 * Real-time visualization of story scenes, on the web with three.js and in Unreal Engine 5.
 * Crafting procedural, hyper-realistic environments that react to stories dynamically.
@@ -88,7 +88,7 @@ I'm the main developer of **[Story Loom AI Art](https://storyloomai.art)**, the 
 >
 > 🎨 I spend days perfecting hyper-realistic environments and dynamic AI systems, just for testers to click "Next" and ask if the button can be a slightly different shade of blue.
 >
-> 🪐 The Story Loom AI Art landing page renders a small solar system just to say hello. It is still lighter than one of my Unreal levels.
+> 🪐 One of our Story Loom AI pages renders a small solar system just to say hello. It is still lighter than one of my Unreal levels.
 
 ## 😄 Pronouns ...
 
