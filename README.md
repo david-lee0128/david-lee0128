@@ -29,19 +29,31 @@ I build worlds you can see. I come from **Unreal Engine** and real-time 3D, wher
 
 I'm a developer at **[Story Loom AI](https://storyloomai.com)**, an AI-driven storytelling platform. My part is the visual one: making a story something you can see.
 
+<p align="center">
+  <a href="https://storyloomai.com"><img src="https://img.shields.io/badge/Main%20app-storyloomai.com-ff7a59?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Main app: storyloomai.com" /></a>
+</p>
+
+The story is written in the main app. These modules are where it is seen:
+
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h3>🎨 Story art</h3>
-      Characters, covers and scenes drawn in one consistent style, so a story looks like itself on every page.
+      <h3>🎬 <a href="https://previs.storyloomai.art">Previs</a></h3>
+      Pre-visualization: scenes lit, framed and rendered like a film set before anything is final, using real-time techniques from game engines.
+      <br /><br />
+      <a href="https://previs.storyloomai.art"><img src="https://img.shields.io/badge/previs.storyloomai.art-open-8f7bff?style=flat-square&logo=googlechrome&logoColor=white" alt="previs.storyloomai.art" /></a>
     </td>
     <td width="33%" valign="top">
-      <h3>🎬 Rendering</h3>
-      Scenes lit, framed and rendered like a film set, using real-time techniques from game engines.
+      <h3>🌍 <a href="https://design.storyloomai.art">Scene Studio</a></h3>
+      Image to 3D world: a single photo is read for depth, shape and light, then rebuilt as a 3D world you can move through and share.
+      <br /><br />
+      <a href="https://design.storyloomai.art"><img src="https://img.shields.io/badge/design.storyloomai.art-open-ff7a59?style=flat-square&logo=googlechrome&logoColor=white" alt="design.storyloomai.art" /></a>
     </td>
     <td width="33%" valign="top">
-      <h3>🌍 Image to 3D world</h3>
-      A single picture is read for depth, shape and light, then rebuilt as a 3D space you can move through.
+      <h3>🎨 <a href="https://comic.storyloomai.art">SLA Comic</a></h3>
+      Story art: type a title, meet your characters, pick a story, and it is written and drawn as a webtoon or a printed comic book.
+      <br /><br />
+      <a href="https://comic.storyloomai.art"><img src="https://img.shields.io/badge/comic.storyloomai.art-open-ffb36b?style=flat-square&logo=googlechrome&logoColor=white" alt="comic.storyloomai.art" /></a>
     </td>
   </tr>
 </table>
