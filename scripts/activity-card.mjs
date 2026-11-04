@@ -38,10 +38,11 @@ const day = (iso) => new Date(iso + "T00:00:00Z").toLocaleDateString("en-US", { 
 
 // One Dark, as in the streak card
 const gold = "#e4bf7a", green = "#98c379", rose = "#e06c75", bg = "#282c34", grid = "#3a3f4b";
-// the streak card is drawn 495x195, so GitHub shows it 420x165; this card is cropped to the same 165 height
-const W = 400, H = 165, Y0 = 7.5, CH = 165, X0 = 24, X1 = 376, BASE = 140, TOP = 80;
+// the streak card is drawn 495x195; this card has the same shape (165 tall, so 165 * 495 / 195 wide), so
+// at the same width in the README both are the same height
+const H = 165, W = +(H * 495 / 195).toFixed(2), Y0 = 7.5, CH = 165, X0 = 24, X1 = W - 24, BASE = 140, TOP = 80;
 // square-root heights, so quiet weeks still show next to a busy one (each bar keeps its exact count in a <title>)
-const step = (X1 - X0) / WEEKS, bw = 13;
+const step = (X1 - X0) / WEEKS, bw = 14;
 
 const bars = recent.map((w, i) => {
   const h = Math.max(2, (BASE - TOP) * Math.sqrt(w.total / best));

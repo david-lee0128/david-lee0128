@@ -243,9 +243,12 @@ The story is written in the main app. These modules are where it is seen:
 
 <br/>
 <div style="display: flex; align-items: flex-start; align: center">
-  <img width="420px" height="180px" src="https://github-readme-streak-stats.herokuapp.com/?user=david-lee0128&theme=onedark" />
-  <img width="400px" height="165px" src="assets/activity.svg" alt="Contributions in the last 16 weeks" />
+  <img align="left" width="49.5%" src="https://github-readme-streak-stats.herokuapp.com/?user=david-lee0128&theme=onedark" />
+  <img align="right" width="49.5%" src="assets/activity.svg" alt="Contributions in the last 16 weeks" />
 </div>
+
+<br clear="all" />
+<br/><br/>
 
 <p align="center">
   <a href="https://storyloomai.com"><img src="assets/footer.svg" width="100%" alt="Thanks for stopping by. See you in another world." /></a>
