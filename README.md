@@ -24,7 +24,7 @@ I build worlds you can see. I come from **Unreal Engine** and real-time 3D, wher
 ## 🪐 Story Loom AI Art
 
 <p align="center">
-  <a href="https://storyloomai.art"><img src="assets/storyloomai-art.jpg" width="92%" alt="Story Loom AI Art: Stories, rendered as worlds." /></a>
+  <a href="https://storyloomai.art"><img src="assets/story-loom-ai-art.svg" width="100%" alt="Story Loom AI Art: stories, rendered as worlds" /></a>
 </p>
 
 I'm the main developer of **[Story Loom AI Art](https://storyloomai.art)**, the visual side of Story Loom AI. Story Loom AI is where a story gets written; Story Loom AI Art is where it gets seen.
