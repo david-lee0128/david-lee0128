@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" role="img" aria-label="Story Loom AI: stories, rendered as worlds">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" role="img" aria-label="David Lee, developer at Story Loom AI: stories, rendered as worlds">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0d0b12"/><stop offset="0.6" stop-color="#140f22"/><stop offset="1" stop-color="#1c1230"/>
@@ -70,10 +70,10 @@
 
     <!-- the words -->
     <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
-      <text x="56" y="92" fill="#ffb36b" font-size="14" font-weight="700" letter-spacing="3.5">STORY LOOM AI</text>
-      <text x="54" y="152" fill="#f4eee6" font-size="46" font-weight="800" letter-spacing="-1.2">Stories, <tspan fill="url(#word)">rendered</tspan></text>
-      <text x="54" y="204" fill="#f4eee6" font-size="46" font-weight="800" letter-spacing="-1.2">as worlds.</text>
-      <text x="56" y="246" fill="#a59eb3" font-size="16">Story art · Rendering · Image to 3D world</text>
+      <text x="56" y="88" fill="#ffb36b" font-size="14" font-weight="700" letter-spacing="3.5">DEVELOPER AT STORY LOOM AI</text>
+      <text x="52" y="160" fill="#f4eee6" font-size="66" font-weight="800" letter-spacing="-2">David <tspan fill="url(#word)">Lee</tspan></text>
+      <text x="55" y="204" fill="#f4eee6" font-size="25" font-weight="700" letter-spacing="-0.5">Stories, <tspan fill="url(#word)">rendered</tspan> as worlds.</text>
+      <text x="56" y="244" fill="#a59eb3" font-size="16">Unreal Engine · Real-time 3D · Visualization · AI Art</text>
     </g>
   </g>
 </svg>

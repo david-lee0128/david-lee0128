@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8f7bff,55:ff7a59,100:ffb36b&height=210&section=header&text=David%20Lee&fontSize=66&fontColor=ffffff&fontAlignY=36&desc=Unreal%20Engine%20%C2%B7%20Real-time%203D%20%C2%B7%20AI%20Art&descSize=19&descAlignY=58&animation=fadeIn" alt="David Lee" width="100%" />
+  <a href="https://storyloomai.com"><img src="assets/header.svg" width="100%" alt="David Lee, developer at Story Loom AI: stories, rendered as worlds" /></a>
 </p>
 
 <p align="center">
   <a href="https://storyloomai.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Sora&weight=600&size=22&duration=2800&pause=900&color=FFB36B&center=true&vCenter=true&width=720&lines=Developer+at+Story+Loom+AI;Turning+a+single+image+into+a+3D+world;Rendering+stories+as+worlds;Unreal+Engine+%E2%9E%9C+Visualization+%E2%9E%9C+AI+Art" alt="Developer at Story Loom AI" />
+    <img src="https://readme-typing-svg.demolab.com?font=Sora&weight=600&size=22&duration=2800&pause=900&color=FFB36B&center=true&vCenter=true&width=720&lines=Unreal+Engine+expert;Turning+a+single+image+into+a+3D+world;Building+Previs%2C+Scene+Studio+and+SLA+Comic;Unreal+Engine+%E2%9E%9C+Visualization+%E2%9E%9C+AI+Art" alt="Unreal Engine expert, turning a single image into a 3D world" />
   </a>
 </p>
 
@@ -22,10 +22,6 @@
 I build worlds you can see. I come from **Unreal Engine** and real-time 3D, where light, cameras and whole worlds have to render in a fraction of a second. Today I work on **visualization** and on turning **single images into 3D worlds**, and I am moving into the **AI art** field.
 
 ## 🪐 Story Loom AI
-
-<p align="center">
-  <a href="https://storyloomai.com"><img src="assets/story-loom-ai.svg" width="100%" alt="Story Loom AI: stories, rendered as worlds" /></a>
-</p>
 
 I'm a developer at **[Story Loom AI](https://storyloomai.com)**, an AI-driven storytelling platform. My part is the visual one: making a story something you can see.
 
