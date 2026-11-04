@@ -45,7 +45,7 @@
       <animate attributeName="r" values="109;119;109" dur="5s" repeatCount="indefinite"/>
     </circle>
     <g transform="rotate(-16 742 152)">
-      <path d="M604 152 A138 34 0 0 1 880 152" fill="none" stroke="#ffb36b" stroke-width="2.4" stroke-dasharray="7 9" opacity="0.55">
+      <path d="M604.0 152 A138.0 34.0 0 0 1 880.0 152" fill="none" stroke="#ffb36b" stroke-width="2.4" stroke-dasharray="7 9" opacity="0.55">
         <animate attributeName="stroke-dashoffset" values="0;-160" dur="6s" repeatCount="indefinite"/>
       </path>
     </g>
@@ -55,16 +55,16 @@
         <ellipse cx="675.7" cy="128.6" rx="23.4" ry="11.7" transform="rotate(-20 675.7 128.6)" fill="#ff7a59" opacity="0.9"/><ellipse cx="692.9" cy="136.4" rx="17.2" ry="10.1" transform="rotate(15 692.9 136.4)" fill="#ff7a59" opacity="0.9"/><ellipse cx="666.3" cy="139.5" rx="12.5" ry="7.8" transform="rotate(30 666.3 139.5)" fill="#ff7a59" opacity="0.9"/><ellipse cx="681.9" cy="119.2" rx="9.4" ry="6.2" transform="rotate(0 681.9 119.2)" fill="#ff7a59" opacity="0.9"/><ellipse cx="730.3" cy="167.6" rx="26.5" ry="15.6" transform="rotate(10 730.3 167.6)" fill="#ff8f62" opacity="0.9"/><ellipse cx="749.8" cy="155.1" rx="15.6" ry="9.4" transform="rotate(-25 749.8 155.1)" fill="#ff8f62" opacity="0.9"/><ellipse cx="714.7" cy="180.1" rx="14.0" ry="9.4" transform="rotate(20 714.7 180.1)" fill="#ff8f62" opacity="0.9"/><ellipse cx="739.7" cy="187.9" rx="10.9" ry="6.2" transform="rotate(0 739.7 187.9)" fill="#ff8f62" opacity="0.9"/><ellipse cx="792.7" cy="124.7" rx="18.7" ry="9.4" transform="rotate(25 792.7 124.7)" fill="#ffb36b" opacity="0.9"/><ellipse cx="806.7" cy="134.1" rx="12.5" ry="7.8" transform="rotate(-10 806.7 134.1)" fill="#ffb36b" opacity="0.9"/><ellipse cx="780.2" cy="120.0" rx="9.4" ry="6.2" transform="rotate(0 780.2 120.0)" fill="#ffb36b" opacity="0.9"/><ellipse cx="847.3" cy="175.4" rx="23.4" ry="14.0" transform="rotate(-15 847.3 175.4)" fill="#ff7a59" opacity="0.9"/><ellipse cx="828.6" cy="166.0" rx="14.0" ry="8.6" transform="rotate(20 828.6 166.0)" fill="#ff7a59" opacity="0.9"/><ellipse cx="864.5" cy="186.3" rx="14.0" ry="7.0" transform="rotate(0 864.5 186.3)" fill="#ff7a59" opacity="0.9"/><ellipse cx="851.2" cy="159.8" rx="9.4" ry="5.5" transform="rotate(0 851.2 159.8)" fill="#ff7a59" opacity="0.9"/><ellipse cx="890.2" cy="113.0" rx="14.0" ry="7.0" transform="rotate(0 890.2 113.0)" fill="#ff9a66" opacity="0.9"/><ellipse cx="901.1" cy="117.7" rx="9.4" ry="5.5" transform="rotate(20 901.1 117.7)" fill="#ff9a66" opacity="0.9"/><ellipse cx="925.3" cy="128.6" rx="23.4" ry="11.7" transform="rotate(-20 925.3 128.6)" fill="#ff7a59" opacity="0.9"/><ellipse cx="942.5" cy="136.4" rx="17.2" ry="10.1" transform="rotate(15 942.5 136.4)" fill="#ff7a59" opacity="0.9"/><ellipse cx="915.9" cy="139.5" rx="12.5" ry="7.8" transform="rotate(30 915.9 139.5)" fill="#ff7a59" opacity="0.9"/><ellipse cx="931.5" cy="119.2" rx="9.4" ry="6.2" transform="rotate(0 931.5 119.2)" fill="#ff7a59" opacity="0.9"/><ellipse cx="979.9" cy="167.6" rx="26.5" ry="15.6" transform="rotate(10 979.9 167.6)" fill="#ff8f62" opacity="0.9"/><ellipse cx="999.4" cy="155.1" rx="15.6" ry="9.4" transform="rotate(-25 999.4 155.1)" fill="#ff8f62" opacity="0.9"/><ellipse cx="964.3" cy="180.1" rx="14.0" ry="9.4" transform="rotate(20 964.3 180.1)" fill="#ff8f62" opacity="0.9"/><ellipse cx="989.3" cy="187.9" rx="10.9" ry="6.2" transform="rotate(0 989.3 187.9)" fill="#ff8f62" opacity="0.9"/><ellipse cx="1042.3" cy="124.7" rx="18.7" ry="9.4" transform="rotate(25 1042.3 124.7)" fill="#ffb36b" opacity="0.9"/><ellipse cx="1056.3" cy="134.1" rx="12.5" ry="7.8" transform="rotate(-10 1056.3 134.1)" fill="#ffb36b" opacity="0.9"/><ellipse cx="1029.8" cy="120.0" rx="9.4" ry="6.2" transform="rotate(0 1029.8 120.0)" fill="#ffb36b" opacity="0.9"/><ellipse cx="1096.9" cy="175.4" rx="23.4" ry="14.0" transform="rotate(-15 1096.9 175.4)" fill="#ff7a59" opacity="0.9"/><ellipse cx="1078.2" cy="166.0" rx="14.0" ry="8.6" transform="rotate(20 1078.2 166.0)" fill="#ff7a59" opacity="0.9"/><ellipse cx="1114.1" cy="186.3" rx="14.0" ry="7.0" transform="rotate(0 1114.1 186.3)" fill="#ff7a59" opacity="0.9"/><ellipse cx="1100.8" cy="159.8" rx="9.4" ry="5.5" transform="rotate(0 1100.8 159.8)" fill="#ff7a59" opacity="0.9"/><ellipse cx="1139.8" cy="113.0" rx="14.0" ry="7.0" transform="rotate(0 1139.8 113.0)" fill="#ff9a66" opacity="0.9"/><ellipse cx="1150.7" cy="117.7" rx="9.4" ry="5.5" transform="rotate(20 1150.7 117.7)" fill="#ff9a66" opacity="0.9"/>
         <animateTransform attributeName="transform" type="translate" values="0 0; -249.6 0" dur="18s" repeatCount="indefinite"/>
       </g>
-      <ellipse cx="742" cy="82" rx="55" ry="14" fill="#f2efff" opacity="0.85"/>
+      <ellipse cx="742" cy="82.0" rx="55" ry="14.0" fill="#f2efff" opacity="0.85"/>
       <circle cx="742" cy="152" r="78" fill="url(#shade)"/>
     </g>
     <circle cx="742" cy="152" r="78" fill="none" stroke="#c9bcff" stroke-opacity="0.5" stroke-width="1.5"/>
     <g transform="rotate(-16 742 152)">
-      <path d="M880 152 A138 34 0 0 1 604 152" fill="none" stroke="#ffb36b" stroke-width="2.8" stroke-dasharray="7 9">
+      <path d="M880.0 152 A138.0 34.0 0 0 1 604.0 152" fill="none" stroke="#ffb36b" stroke-width="2.8" stroke-dasharray="7 9">
         <animate attributeName="stroke-dashoffset" values="0;-160" dur="6s" repeatCount="indefinite"/>
       </path>
-      <circle r="7" fill="#d8d2e6">
-        <animateMotion dur="9s" repeatCount="indefinite" path="M902 152 A160 44 0 1 1 582 152 A160 44 0 1 1 902 152"/>
+      <circle r="7.0" fill="#d8d2e6">
+        <animateMotion dur="9s" repeatCount="indefinite" path="M902.0 152 A160.0 44.0 0 1 1 582.0 152 A160.0 44.0 0 1 1 902.0 152"/>
       </circle>
     </g>
 

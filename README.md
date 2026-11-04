@@ -248,5 +248,5 @@ The story is written in the main app. These modules are where it is seen:
 </div>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffb36b,45:ff7a59,100:8f7bff&height=120&section=footer" width="100%" alt="" />
+  <a href="https://storyloomai.com"><img src="assets/footer.svg" width="100%" alt="Thanks for stopping by. See you in another world." /></a>
 </p>
