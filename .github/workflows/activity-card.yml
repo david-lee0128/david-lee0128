@@ -1,0 +1,27 @@
+# Redraws assets/activity.svg (the card beside the streak stats) once a day from the public
+# contribution calendar, and commits it only when it changed.
+name: Activity card
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  card:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/activity-card.mjs david-lee0128 assets/activity.svg
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/activity.svg
+          git diff --cached --quiet || { git commit -m "Refresh the activity card"; git push; }

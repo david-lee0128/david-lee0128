@@ -248,6 +248,7 @@ The story is written in the main app. These modules are where it is seen:
 <br/>
 <div style="display: flex; align-items: flex-start; align: center">
   <img width="420px" height="180px" src="https://github-readme-streak-stats.herokuapp.com/?user=david-lee0128&theme=onedark" />
+  <img width="400px" height="180px" src="assets/activity.svg" alt="Contributions in the last 16 weeks" />
 </div>
 
 <p align="center">
