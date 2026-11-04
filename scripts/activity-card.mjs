@@ -38,8 +38,8 @@ const day = (iso) => new Date(iso + "T00:00:00Z").toLocaleDateString("en-US", { 
 
 // One Dark, as in the streak card
 const gold = "#e4bf7a", green = "#98c379", rose = "#e06c75", bg = "#282c34", grid = "#3a3f4b";
-// the streak card keeps its 495x195 shape, so in its 420x180 box it is 165 tall and 7.5 down; match it
-const W = 400, H = 180, Y0 = 7.5, CH = 165, X0 = 24, X1 = 376, BASE = 140, TOP = 80;
+// the streak card is drawn 495x195, so GitHub shows it 420x165; this card is cropped to the same 165 height
+const W = 400, H = 165, Y0 = 7.5, CH = 165, X0 = 24, X1 = 376, BASE = 140, TOP = 80;
 // square-root heights, so quiet weeks still show next to a busy one (each bar keeps its exact count in a <title>)
 const step = (X1 - X0) / WEEKS, bw = 13;
 
@@ -61,7 +61,7 @@ const clip = recent.map((w, i) => {
   return `<rect x="${(X0 + i * step + (step - bw) / 2).toFixed(1)}" y="${(BASE - h).toFixed(1)}" width="${bw}" height="${h.toFixed(1)}" rx="2.5"/>`;
 }).join("");
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${total} contributions in the last ${WEEKS} weeks, ${now} this week">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 ${Y0} ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${total} contributions in the last ${WEEKS} weeks, ${now} this week">
   <style>
     .t { font-family: 'Segoe UI', Ubuntu, sans-serif; }
     .fade { opacity: 0; animation: in .8s ease forwards; }
