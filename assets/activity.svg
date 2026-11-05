@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 7.5 418.85 165" width="418.85" height="165" role="img" aria-label="552 contributions in the last 16 weeks, 59 this week">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 7.5 418.85 165" width="418.85" height="165" role="img" aria-label="555 contributions in the last 16 weeks, 62 this week">
   <style>
     .t { font-family: 'Segoe UI', Ubuntu, sans-serif; }
     .fade { opacity: 0; animation: in .8s ease forwards; }
@@ -7,14 +7,14 @@
   <defs>
     <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e06c75" stop-opacity="0.85"/><stop offset="1" stop-color="#e4bf7a"/></linearGradient>
     <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-    <clipPath id="bars"><rect x="37.3" y="130.7" width="14" height="9.3" rx="2.5"/><rect x="59.9" y="138.0" width="14" height="2.0" rx="2.5"/><rect x="82.5" y="125.0" width="14" height="15.0" rx="2.5"/><rect x="105.2" y="132.8" width="14" height="7.2" rx="2.5"/><rect x="127.8" y="138.0" width="14" height="2.0" rx="2.5"/><rect x="150.4" y="124.4" width="14" height="15.6" rx="2.5"/><rect x="173.0" y="129.0" width="14" height="11.0" rx="2.5"/><rect x="195.6" y="126.2" width="14" height="13.8" rx="2.5"/><rect x="218.2" y="135.8" width="14" height="4.2" rx="2.5"/><rect x="240.8" y="124.4" width="14" height="15.6" rx="2.5"/><rect x="263.5" y="110.0" width="14" height="30.0" rx="2.5"/><rect x="286.1" y="80.0" width="14" height="60.0" rx="2.5"/><rect x="308.7" y="119.6" width="14" height="20.4" rx="2.5"/><rect x="331.3" y="98.2" width="14" height="41.8" rx="2.5"/><rect x="353.9" y="113.7" width="14" height="26.3" rx="2.5"/><rect x="376.5" y="108.0" width="14" height="32.0" rx="2.5"/></clipPath>
+    <clipPath id="bars"><rect x="37.3" y="130.7" width="14" height="9.3" rx="2.5"/><rect x="59.9" y="138.0" width="14" height="2.0" rx="2.5"/><rect x="82.5" y="125.0" width="14" height="15.0" rx="2.5"/><rect x="105.2" y="132.8" width="14" height="7.2" rx="2.5"/><rect x="127.8" y="138.0" width="14" height="2.0" rx="2.5"/><rect x="150.4" y="124.4" width="14" height="15.6" rx="2.5"/><rect x="173.0" y="129.0" width="14" height="11.0" rx="2.5"/><rect x="195.6" y="126.2" width="14" height="13.8" rx="2.5"/><rect x="218.2" y="135.8" width="14" height="4.2" rx="2.5"/><rect x="240.8" y="124.4" width="14" height="15.6" rx="2.5"/><rect x="263.5" y="110.0" width="14" height="30.0" rx="2.5"/><rect x="286.1" y="80.0" width="14" height="60.0" rx="2.5"/><rect x="308.7" y="119.6" width="14" height="20.4" rx="2.5"/><rect x="331.3" y="98.2" width="14" height="41.8" rx="2.5"/><rect x="353.9" y="113.7" width="14" height="26.3" rx="2.5"/><rect x="376.5" y="107.2" width="14" height="32.8" rx="2.5"/></clipPath>
   </defs>
   <rect x="9" y="7.5" width="409.85" height="165" rx="4.5" fill="#282c34"/>
 
   <g class="t">
-    <text class="fade" x="33" y="44" fill="#e4bf7a" font-size="28" font-weight="700">552</text>
+    <text class="fade" x="33" y="44" fill="#e4bf7a" font-size="28" font-weight="700">555</text>
     <text class="fade" x="33" y="63" fill="#e4bf7a" font-size="13">Contributions, last 16 weeks</text>
-    <text class="fade" x="394.85" y="44" fill="#98c379" font-size="22" font-weight="700" text-anchor="end">59</text>
+    <text class="fade" x="394.85" y="44" fill="#98c379" font-size="22" font-weight="700" text-anchor="end">62</text>
     <text class="fade" x="394.85" y="63" fill="#98c379" font-size="13" text-anchor="end">This week</text>
   </g>
 
@@ -35,7 +35,7 @@
     <g transform="translate(308.7 140)"><rect y="-20.4" width="14" height="20.4" rx="2.5" fill="url(#bar)"><title>24 in the week of Oct 11</title><animateTransform attributeName="transform" type="scale" values="1 0;1 0;1 1.06;1 1" keyTimes="0;0.519;0.85;1" dur="1.87s" fill="freeze"/></rect></g>
     <g transform="translate(331.3 140)"><rect y="-41.8" width="14" height="41.8" rx="2.5" fill="url(#bar)"><title>101 in the week of Oct 18</title><animateTransform attributeName="transform" type="scale" values="1 0;1 0;1 1.06;1 1" keyTimes="0;0.534;0.85;1" dur="1.93s" fill="freeze"/></rect></g>
     <g transform="translate(353.9 140)"><rect y="-26.3" width="14" height="26.3" rx="2.5" fill="url(#bar)"><title>40 in the week of Oct 25</title><animateTransform attributeName="transform" type="scale" values="1 0;1 0;1 1.06;1 1" keyTimes="0;0.548;0.85;1" dur="1.99s" fill="freeze"/></rect></g>
-    <g transform="translate(376.5 140)"><rect y="-32" width="14" height="32.0" rx="2.5" fill="#98c379"><title>59 in the week of Nov 1</title><animateTransform attributeName="transform" type="scale" values="1 0;1 0;1 1.06;1 1" keyTimes="0;0.561;0.85;1" dur="2.05s" fill="freeze"/></rect></g>
+    <g transform="translate(376.5 140)"><rect y="-32.8" width="14" height="32.8" rx="2.5" fill="#98c379"><title>62 in the week of Nov 1</title><animateTransform attributeName="transform" type="scale" values="1 0;1 0;1 1.06;1 1" keyTimes="0;0.561;0.85;1" dur="2.05s" fill="freeze"/></rect></g>
   </g>
 
   <!-- a light that sweeps across the bars now and then -->
@@ -46,10 +46,10 @@
   </g>
 
   <!-- this week, pulsing -->
-  <circle cx="383.5" cy="99.0" r="3" fill="#98c379">
+  <circle cx="383.5" cy="98.2" r="3" fill="#98c379">
     <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="383.5" cy="99.0" r="3" fill="none" stroke="#98c379" stroke-width="1.5">
+  <circle cx="383.5" cy="98.2" r="3" fill="none" stroke="#98c379" stroke-width="1.5">
     <animate attributeName="r" values="3;10" dur="1.8s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/>
   </circle>
